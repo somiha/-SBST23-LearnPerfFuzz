@@ -20,7 +20,7 @@ FROM $parent_image
 
 RUN git clone https://github.com/somiha/LearnPerfFuzz.git /LearnPerfFuzz && \
     cd /LearnPerfFuzz && \
-    git checkout 6b5c6e40dd72ccc22803edf7f30637637e70cc24 && \
+    git checkout b2ccc27e0c0fad3c75dc14f44672eee4f4a24ea2 && \
     CFLAGS= CXXFLAGS= AFL_NO_X86=1 make
 
 # Use afl_driver.cpp from LLVM as our fuzzing library.
